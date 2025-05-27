@@ -33,6 +33,14 @@ Scans each URL in the `urls` list using a regular expression to find and extract
 - `list`: A list of all email addresses found on the provided URLs.
 
 
+```python
+import pywebcrwl
+
+pages = pywebcrwl.extract_pages_from_url("https://example.com")
+for page in pages:
+    print(page)```
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### `extract_pages_from_url(url)`
 
 Crawls all internal links found on the given URL and returns a list of all pages discovered from that domain.
