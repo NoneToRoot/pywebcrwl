@@ -38,9 +38,9 @@ Scans each URL in the `urls` list using a regular expression to find and extract
 ```python
 import pywebcrwl
 
-pages = pywebcrwl.extract_pages_from_url("https://example.com")
-for page in pages:
-    print(page)
+list_of_emails = pywebcrwl.extract_emails(['https://exemple.com'])
+print(list_of_emails)
+ #[exemple1@gmail.com, exemple2@exemple.com,...]
 ```
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
