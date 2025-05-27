@@ -41,7 +41,7 @@ import pywebcrwl
 
 list_of_emails = pywebcrwl.extract_emails(['https://exemple.com'])
 print(list_of_emails)
- #[exemple1@gmail.com, exemple2@exemple.com,...]
+ # [exemple1@gmail.com, exemple2@exemple.com,...]
 ```
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -67,6 +67,35 @@ print(list_of_pages)
 # [https://example.com, https://example.com/docs, https://example.com/img, https://example.com/img/picture, ...]
 ```
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+### `extract_by_regex(urls, regex)`
+
+Searches in the HTML content of each URL for all matches of a given regular expression.
+
+**Parameters**:
+- `urls` (`list`): A list of URLs to search in and scan.
+- `regex` (`str`): A regular expression pattern used to search inside the page text.
+
+**Returns**:
+- `list`: A list of all unique matches found across the given URLs.
+
+**Note**:
+- Results depend entirely on the quality and accuracy of the regular expression you provide.
+
+**Example**:
+
+```python
+import pywebcrwl
+
+# Pattern for dates like 27/05/2025 or 27-05-2025
+pattern = r"\b\d{2}[/-]\d{2}[/-]\d{4}\b"
+matches = pywebcrwl.extract_by_regex(["https://example.com"], pattern)
+print(matches)
+# [24-05-2020, 12-09-2024, 01/05/2021, ...]
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
