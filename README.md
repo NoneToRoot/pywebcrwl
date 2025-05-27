@@ -21,7 +21,7 @@
 
   ## Documentation
 
-  - **extract_emails(urls)** : This function scans each URL in the "urls" list using a regular expression to find and extract valid email addresses from the page content.
+  ### **extract_emails(urls)** : This function scans each URL in the "urls" list using a regular expression to find and extract valid email addresses from the page content.
     **Note**: Since the extraction is based on regular expressions, some results may include false positives.
     
     Parameteres:
