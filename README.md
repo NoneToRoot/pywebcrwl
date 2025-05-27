@@ -2,6 +2,8 @@
 
 **pywebcrwl** is a simple Python web crawler that extracts various types of information such as links, emails, phone numbers, keywords, and more from websites.
 
+*DISCLAIMER*: ddd
+
 ## Features
 
 - Crawl and extract all pages from a given URL
