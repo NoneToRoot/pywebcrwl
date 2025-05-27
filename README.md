@@ -38,7 +38,8 @@ import pywebcrwl
 
 pages = pywebcrwl.extract_pages_from_url("https://example.com")
 for page in pages:
-    print(page)```
+    print(page)
+```
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### `extract_pages_from_url(url)`
