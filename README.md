@@ -20,16 +20,18 @@
 - Generate a summary (resume) of a page
 
   ## Documentation
+### `extract_emails(urls)`
 
-  ### **extract_emails(urls)**
-   This function scans each URL in the "urls" list using a regular expression to find and extract valid email addresses from the page content.
-    **Note**: Since the extraction is based on regular expressions, some results may include false positives.
-    
-    Parameteres:
-    - urls (list): A list of URLs to crawl and search for email addresses.
-      
-    Returns:
-    list: A list of all email addresses found on the provided URLs.
+Scans each URL in the `urls` list using a regular expression to find and extract valid email addresses from the page content.
+
+> ⚠️ **Note**: Since the extraction is based on regular expressions, some results may include false positives.
+
+**Parameters**:
+- `urls` (`list`): A list of URLs to crawl and search for email addresses.
+
+**Returns**:
+- `list`: A list of all email addresses found on the provided URLs.
+
 
 
 ## Installation
