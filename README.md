@@ -19,6 +19,17 @@
 - Extract social media links
 - Generate a summary (resume) of a page
 
+  ## Documentation
+
+  - **extract_emails(urls)** : This function scans each URL in the list using a regular expression to find and extract valid email addresses from the page content.
+    **Note**: since the function uses regular expression, there can be false positive
+    
+    Parameteres:
+    - urls (list): A list of URLs to crawl and search for email addresses.
+    Returns:
+    list: A list of all email addresses found on the provided URLs.
+
+
 ## Installation
 
 ```bash
