@@ -96,6 +96,29 @@ print(matches)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
+### `extract_emails_by_domain(urls, domain)`
+
+Searches all given URLs and extracts email addresses that match a specific domain (like `gmail.com` or `mycompany.org`).
+
+**Parameters**:
+- `urls` (`list`): A list of website links (URLs) to visit and check.
+- `domain` (`str`): The email domain you are looking for (for example: `"example.com"`).
+
+**Returns**:
+- `list`: A list of email addresses that use the given domain name.
+
+**Example**:
+
+```python
+import pywebcrwl
+
+emails = pywebcrwl.extract_emails_by_domain(["https://example.com"],"example.com")
+print(emails)
+# [123@exemple.com, CEO@example.com, john@example.com, ... ]
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
