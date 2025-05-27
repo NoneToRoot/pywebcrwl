@@ -115,6 +115,7 @@ import pywebcrwl
 emails = pywebcrwl.extract_emails_by_domain(["https://example.com"],"example.com")
 print(emails)
 # [123@exemple.com, CEO@example.com, john@example.com, ... ]
+```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
