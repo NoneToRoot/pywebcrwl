@@ -27,7 +27,8 @@ Scans each URL in the `urls` list using a regular expression to find and extract
 > ⚠️ **Note**: Since the extraction is based on regular expressions, some results may include false positives.
 
 **Parameters**:
-- `urls` (`list`): A list of URLs to crawl and search for email addresses. Each URL MUST start by "https://" following by the remaining part of the URL
+- `urls` (`list`): A list of URLs to crawl and search for email addresses. Each URL MUST start by "https://" following by the remaining part of the URL.
+  
 Exemple : "https://exemple.com" or "https://www.exemple.com"
 
 **Returns**:
