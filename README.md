@@ -39,10 +39,10 @@ Crawls all internal links found on the given URL and returns a list of all pages
 
 
 **Parameters**:
-- `url` (`str`): The starting URL to begin crawling from.
+- `url` (`str`): The starting URL to begin searching from.
 
 **Returns**:
-- `list`: A list of unique page URLs that were found during the crawl, including the original URL.
+- `list`: A list of all page URLs that were found during the crawl, including the original URL.
 
 
 
