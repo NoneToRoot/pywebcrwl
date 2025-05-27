@@ -32,6 +32,7 @@ Scans each URL in the `urls` list using a regular expression to find and extract
 **Returns**:
 - `list`: A list of all email addresses found on the provided URLs.
 
+  **Exemple**
 
 ```python
 import pywebcrwl
