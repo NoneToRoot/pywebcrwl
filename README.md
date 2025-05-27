@@ -29,12 +29,12 @@ Scans each URL in the `urls` list using a regular expression to find and extract
 **Parameters**:
 - `urls` (`list`): A list of URLs to crawl and search for email addresses. Each URL MUST start by "https://" following by the remaining part of the URL.
   
-Exemple : "https://exemple.com" or "https://www.exemple.com"
+Example : "https://example.com" or "https://www.example.com"
 
 **Returns**:
 - `list`: A list of all email addresses found on the provided URLs.
 
-  **Exemple**
+**Example**
 
 ```python
 import pywebcrwl
@@ -47,14 +47,38 @@ print(list_of_emails)
 
 ### `extract_pages_from_url(url)`
 
-Crawls all internal links found on the given URL and returns a list of all pages discovered from that domain.
-
+Searches all internal links on the given website URL and returns a list of all pages found from the same domain.
 
 **Parameters**:
-- `url` (`str`): The starting URL to begin searching from.
+- `url` (`str`): The starting URL to begin searching from. The URL MUST start by "https://" following by the remaining part of the URL.
+  
+Example : "https://example.com" or "https://www.example.com"
 
 **Returns**:
 - `list`: A list of all page URLs that were found during the crawl, including the original URL.
+
+**Example**
+
+```python
+import pywebcrwl
+
+list_of_pages = pywebcrwl.extract_pages_from_url('https://example.com')
+print(list_of_pages)
+# [https://example.com, https://example.com/docs, https://example.com/img, https://example.com/img/picture, ...]
+```
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
